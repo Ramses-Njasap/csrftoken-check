@@ -10,7 +10,6 @@ def custom_csrf_view(request):
     if request.method == 'POST':
         logger.debug("POST request received")
         print("IS IT HERE???")
-        # Your logic to create a resource
         return JsonResponse({'message': 'Resource created successfully'}, status=201)
     logger.debug("Invalid request method")
     return JsonResponse({'error': 'Invalid request method'}, status=400)

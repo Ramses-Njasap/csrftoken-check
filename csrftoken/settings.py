@@ -119,12 +119,11 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8001",
 ]
 
-# Allow requests from your frontend origin
+# Allow requests from frontend origin
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8001",
 ]
 
-# settings.py
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
